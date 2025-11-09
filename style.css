@@ -1,0 +1,54 @@
+html {
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    width: 100%;
+}
+
+header {
+ background-image: url(/Images/BooksPHilo.jpg);
+ background-color: gray;
+ border: 5px solid black;
+ padding: 0px;
+ margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 100px;
+}
+
+header .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(83, 83, 83);
+    border: 2px;
+}
+
+header .navbar li{
+    margin: 0;
+}
+
+header .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+header .navbar li a:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+}
