@@ -1,6 +1,15 @@
 html {
     margin: auto;
     font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    background-color: #f0f0f0;
+    background-color: #FAF0E6;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
 nav {
@@ -9,26 +18,31 @@ nav {
 
 header {
  background-image: url(/Images/BooksPHilo.jpg);
- background-color: gray;
- border: 5px solid black;
+ background-color: rgb(0, 0, 0);
+ border: 2px solid rgb(0, 0, 0);
  padding: 0px;
  margin: auto;
+ width: 100%;
 }
 
 header h1 {
     text-align: center;
     color: white;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1.3px rgb(6, 6, 6);
     font-size: 100px;
+    text-shadow: 2px 2px 5px black;
 }
 
 header .navbar {
     list-style-type: none;
+    width: fit-content;
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: rgb(83, 83, 83);
-    border: 2px;
+    background-color: rgb(10, 94, 25);
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+
 }
 
 header .navbar li{
@@ -44,11 +58,97 @@ header .navbar li a {
 }
 
 header .navbar li a:hover {
-    background-color: white;
-    color: black;
+    background-color: rgb(93, 171, 24);
+    color: rgb(0, 0, 0);
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container img{
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid rgb(75, 72, 72);
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+}
+
+.container p{
+    flex-grow: auto;
+}
+
+
 footer {
-    background-color: black;
-    color: aliceblue;
+    border: 2px solid black;
+    background-color: rgb(6, 107, 13);
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0%;
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color:black
+}
+
+h2, h3 {
+    font-size: x-large;
+}
+
+p {
+    text-align: justify;
+    font-size: large;
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    font-size: larger;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.About{
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    width: 900px;
+}
+
+#quote-box {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+
+#quote-text {
+  font-size: 1.4em;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.fade {
+  opacity: 1;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
 }
