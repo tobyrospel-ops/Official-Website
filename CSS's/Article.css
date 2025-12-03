@@ -103,4 +103,8 @@ article{
 img{
     box-shadow: 2px 2px 2px 2px black;
     border: 1px solid black;
+    display: block;
+    width: 600px;
+    height: auto;
+    margin: 20px auto;
 }
