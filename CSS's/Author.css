@@ -196,3 +196,56 @@ footer ul {
     color: black;
     text-align: center;
 }
+
+@media (max-width: 1080px) {
+    header h1 {
+        font-size: 70px;
+    }
+
+    .image-float {
+        max-width: 90%;
+        margin: auto;
+        border-right: none;
+        border-top: none;
+        box-shadow: 3px 3px 8px black;
+    }
+
+    .text-content p {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .text-content h2 {
+        font-size: 30px;
+    }
+
+    article {
+        column-count: 1;
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    article a {
+        font-size: 35px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .Socials {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    blockquote {
+        max-width: 90%;
+        font-size: 1.3em;
+    }
+
+    footer p {
+        font-size: 25px;
+    }
+
+    footer ul {
+        gap: 10px;
+    }
+}

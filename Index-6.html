@@ -24,40 +24,40 @@
     <tbody>
         <tr>
             <td>Monday</td>
-            <td class="closed">9-11 AM</td>
+            <td class="closed">9-11AM</td>
             <td class="open">1-3pm</td>
         </tr>
         <tr>
             <td>Tuesday</td>
-            <td class="open">9-11 AM</td>
+            <td class="open">9-11AM</td>
             <td class="open">1-3pm</td>
         </tr>
         <tr>
-            <td>Wendesday</td>
-            <td class="open">9-11 AM</td>
+            <td>Wednesday</td>
+            <td class="open">9-11AM</td>
             <td class="closed">1-3pm</td>
         </tr>
         <tr>
             <td>Thursday</td>
-            <td class="closed">9-11 AM</td>
+            <td class="closed">9-11AM</td>
             <td class="open">1-3pm</td>
         </tr>
         <tr>
             <td>Friday</td>
-            <td class="closed">9-11 AM</td>
+            <td class="closed">9-11AM</td>
             <td class="open">1-3pm</td>
         </tr>
         <tr>
             <td>Saturday</td>
-            <td class="closed">9-11 AM</td>
+            <td class="closed">9-11AM</td>
             <td class="open">1-3pm</td>
         </tr>
     </tbody>
     </table>
     <br>
-    <p>Once you have sumbitted this form, we'll contact you as soon as possible. So you, future philosopher, can make your own schedule that corresponds with the table above.</p>
+    <p>Once you sumbitted this form, we'll contact you as soon as possible. So you, future philosopher, can make your own schedule that corresponds with the table above.</p>
     <br>
-    <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="_self">
+    <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="submitted">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" placeholder="please type your full name" required><br><br>
         
@@ -65,16 +65,18 @@
         <input type="date" id="date-of-birth" name="Birthdate" required><br><br>
 
         <label for="phone-number">Phone Number:</label><br>
-        <input type="phone-number" id="phone-number" name="phone-number" placeholder="(###)###-####" required><br><br>
+        <input type="tel" id="phone-number" name="phone-number" required placeholder="(###)###-####"><br><br>
 
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" reuired><br>
+        <input type="email" id="email" name="email" required><br><br>
 
         <label for="message">How did you hear about us?</label><br>
         <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
 
-        <button type="submit">Submit Form</button>
+        <input type="submit">
     </form>
+    <iframe id="submitted" name="submitted" class="submitted"></iframe>
+    <br>
     <footer>
         <p>&copy; 2025 My Website. All rights reserved.</p>
         <nav class="footer-nav">
